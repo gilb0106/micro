@@ -1,0 +1,16 @@
+org\ac\cst8277\gilbert\joey\messageservice\Controller\SubscriptionController.class
+org\ac\cst8277\gilbert\joey\messageservice\Bean\Message.class
+org\ac\cst8277\gilbert\joey\messageservice\MessageserviceApplication.class
+org\ac\cst8277\gilbert\joey\messageservice\Repo\SubscriptionRepo.class
+org\ac\cst8277\gilbert\joey\messageservice\Bean\Role.class
+org\ac\cst8277\gilbert\joey\messageservice\Controller\MessageController.class
+org\ac\cst8277\gilbert\joey\messageservice\DataConverter\BinaryConverter.class
+org\ac\cst8277\gilbert\joey\messageservice\Repo\MessageRepo.class
+org\ac\cst8277\gilbert\joey\messageservice\Bean\Subscription.class
+org\ac\cst8277\gilbert\joey\messageservice\DAO\SubscriptionDao.class
+org\ac\cst8277\gilbert\joey\messageservice\DAO\MessageDao.class
+org\ac\cst8277\gilbert\joey\messageservice\Service\MessageService.class
+org\ac\cst8277\gilbert\joey\messageservice\Service_Connector\UMSConnector.class
+org\ac\cst8277\gilbert\joey\messageservice\Service\SubscriptionService.class
+org\ac\cst8277\gilbert\joey\messageservice\Bean\User.class
+org\ac\cst8277\gilbert\joey\messageservice\Service_Connector\HttpResponseExtractor.class

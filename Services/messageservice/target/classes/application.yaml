@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: messageservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/messages
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      allow-pool-suspension: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        ddl-auto: update
+        boot:
+          allow_jdbc_metadata_access: false
+  sql:
+    init:
+      mode: never
+
+server:
+  port: 8081
+
+ums:
+  host: http://localhost
+  port: 8080
+  paths:
+    user: /users/
