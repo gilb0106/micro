@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<body>
+<h1>Welcome to the Index Page</h1>
+
+<div id="auth">
+    <!-- If the user is logged in, display the logout button -->
+    <div th:if="${isLoggedIn}">
+        <p>Logged in as: <span th:text="${githubLogin}"></span></p>
+        <form action="/logout" method="post">
+            <!-- Hidden input field for the token -->
+            <input type="hidden" name="token" th:value="${token}"/>
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+
+    <!-- If the user is not logged in, display the login button -->
+    <div th:unless="${isLoggedIn}">
+        <p>You are not logged in.</p>
+        <a href="/oauth2/authorization/github">Login with GitHub</a>
+    </div>
+</div>
+</body>
+</html>

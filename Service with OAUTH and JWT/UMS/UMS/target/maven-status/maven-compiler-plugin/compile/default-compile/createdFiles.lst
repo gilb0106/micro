@@ -1,0 +1,12 @@
+org\ac\cst8277\gilbert\joey\ums\Service\UserService.class
+org\ac\cst8277\gilbert\joey\ums\Bean\User.class
+org\ac\cst8277\gilbert\joey\ums\Service\RoleService.class
+org\ac\cst8277\gilbert\joey\ums\Controller\RoleController.class
+org\ac\cst8277\gilbert\joey\ums\Repo\UserRepo.class
+org\ac\cst8277\gilbert\joey\ums\Repo\RoleRepo.class
+org\ac\cst8277\gilbert\joey\ums\Bean\Role.class
+org\ac\cst8277\gilbert\joey\ums\UmsApplication.class
+org\ac\cst8277\gilbert\joey\ums\DAO\UserDao.class
+org\ac\cst8277\gilbert\joey\ums\DAO\RoleDao.class
+org\ac\cst8277\gilbert\joey\ums\Controller\UserController.class
+org\ac\cst8277\gilbert\joey\ums\DataConverter\BinaryConverter.class

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Demo Page</title>
+</head>
+<body>
+<h1>Welcome to the Demo Page</h1>
+
+<div id="content">
+
+    <p th:if="${token}" th:text="'Username: ' + ${githubLogin}"></p>
+    <p th:if="${token}" th:text="'UserID: ' + ${userId}"></p>
+    <p th:if="${token}" th:text="'JWT Token: ' + ${token}"></p>
+    <p th:if="${token}" th:text="'Roles: ' + ${roles}"></p>
+    <p th:if="${token}" th:text="'Token Expiration: ' + ${expiration}"></p>
+    <p th:unless="${token}">Guest</p>
+</div>
+
+<form th:action="@{/refresh(roles=${roles})}" method="post">
+    <input type="hidden" name="token" th:value="${token}" />
+    <input type="hidden" name="userId" th:value="${userId}" />
+    <input type="hidden" name="githubLogin" th:value="${githubLogin}" />
+    <input type="hidden" name="roles" th:value="${roles}" />
+    <button type="submit">Refresh Token</button>
+</form>
+
+<button id="loginButton">Go Back to Login</button>
+
+<script>
+    document.getElementById('loginButton').addEventListener('click', function() {
+        window.location.href = '/';
+    });
+</script>
+</body>
+</html>
